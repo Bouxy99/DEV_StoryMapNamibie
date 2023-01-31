@@ -35,7 +35,7 @@ map.on('load', async () => {
     // Routes geojson
     // We fetch the JSON here so that we can parse and use it separately
     // from GL JS's use in the added source.
-    const response = await fetch('geom/routes.geojson');
+    const response = await fetch('geom/routes2.geojson');
     data = await response.json();
     // save full coordinate list for later
     coordinates = data.features[0].geometry.coordinates;
