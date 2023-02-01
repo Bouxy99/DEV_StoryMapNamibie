@@ -11,6 +11,15 @@ const map = new mapboxgl.Map({
 
 map.on('load', async () => {
 
+    // Add 3D Terrain
+    map.addSource('mapbox-dem', {
+        'type': 'raster-dem',
+        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        'tileSize': 512,
+        'maxzoom': 14
+    });
+    map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
     // 360 images custom marker
     map.loadImage('img/360.png', (error, image) => {
         if (error) throw error;
@@ -39,7 +48,7 @@ map.on('load', async () => {
     data = await response.json();
     // save full coordinate list for later
     coordinates = data.features[0].geometry.coordinates;
- 
+
     // start by showing just the first coordinate
     data.features[0].geometry.coordinates = [coordinates[0]];
 
