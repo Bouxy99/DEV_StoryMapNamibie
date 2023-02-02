@@ -3,11 +3,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYm91eHkiLCJhIjoiY2szaGdyMHZxMDNhbTNwbnVudW0zN
 // Map creation
 const map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/bouxy/cldejgtgt008e01t7me8x9caf/draft', // style URL
+    style: 'mapbox://styles/mapbox/satellite-v9', // style URL mapbox://styles/bouxy/cldejgtgt008e01t7me8x9caf/draft
     projection: 'globe', // Display the map as a globe
     center: [16.47, -22.79], // starting position [lng, lat]
-    zoom: 5 // starting zoom
+    zoom: 12, // starting zoom
+    antialias: true
 });
+
 
 map.on('load', async () => {
 
@@ -20,8 +22,47 @@ map.on('load', async () => {
     });
     map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
+    // Add Building
+
+    map.addLayer(
+        {
+            'id': 'add-3d-buildings',
+            'source': 'composite',
+            'source-layer': 'building',
+            'filter': ['==', 'extrude', 'true'],
+            'type': 'fill-extrusion',
+            'minzoom': 15,
+            'paint': {
+                'fill-extrusion-color': '#aaa',
+
+                // Use an 'interpolate' expression to
+                // add a smooth transition effect to
+                // the buildings as the user zooms in.
+                'fill-extrusion-height': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    15,
+                    0,
+                    15.05,
+                    ['get', 'height']
+                ],
+                'fill-extrusion-base': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    15,
+                    0,
+                    15.05,
+                    ['get', 'min_height']
+                ],
+                'fill-extrusion-opacity': 0.8
+            }
+        }
+    );
+
     // 360 images custom marker
-    map.loadImage('img/360.png', (error, image) => {
+    map.loadImage('img/logo/360.png', (error, image) => {
         if (error) throw error;
         map.addImage('logo_360', image);
     });
@@ -66,7 +107,12 @@ map.on('load', async () => {
             'line-width': 5
         }
     });
+
+    // Add 3D model
+    map.addLayer(customLayer);
+
+
 });
 
 // Map inclination
-map.setPitch(30);
+//map.setPitch(30);

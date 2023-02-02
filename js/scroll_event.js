@@ -20,6 +20,7 @@ addEventListener("scroll", (event) => {
             }
         }
     }
+    moveCar(coordinates[i]);
     map.panTo(coordinates[i]);
     scroll_actu = window.scrollY;
     updateDiv();
@@ -28,7 +29,6 @@ addEventListener("scroll", (event) => {
 //Show map after scrolling
 $(window).scroll(function () {
     d_top_map = $('#map').offset().top;
-    console.log($(this).scrollTop()-d_top_map)
     if ((d_top_map - $(this).scrollTop()) <= 0) {
         $('#map').removeClass('map_abs');
         $('#map').addClass('map_fix');
