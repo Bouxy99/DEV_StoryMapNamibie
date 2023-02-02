@@ -22,38 +22,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- StoryMap Style -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #map {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            right: 55%;
-            width: 40%;
-            max-width: 750px;
-        }
-
-        #img_360 {
-            z-index: 1;
-            position: fixed;
-            top: 5%;
-            left: 5%;
-            height: 90%;
-            width: 90%;
-            display: none;
-            border-color: white;
-            border-width: 25px;
-        }
-    </style>
 </head>
 
 <body>
-    <div id="map"></div>
+    <div id="intro"></div>
+    <div id="map" class="map_abs"></div>
     <!--
     <div id="img_360">
         <a-scene>
@@ -523,6 +498,7 @@
         </div>
     </div>
 
+    <script src="js/init.js"></script>
     <script src="js/mapbox_init.js"></script>
     <script src="js/mapbox_mouse_event.js"></script>
     <script src="js/scroll_event.js"></script>
