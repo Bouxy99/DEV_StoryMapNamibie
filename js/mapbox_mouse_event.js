@@ -2,8 +2,7 @@
 map.on('click', '360', (e) => {
     url_img = e.features[0].properties.url;
     rotation = e.features[0].properties.rotation;
-    $("a-sky").attr('src', url_img);
-    $("a-sky").attr('rotation', rotation);
+    $("#img_360").attr('src', `360_img.html?url_img=${url_img}&rotation=${rotation}`);
     $("#img_360").show();
 });
 

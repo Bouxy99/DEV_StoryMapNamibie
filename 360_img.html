@@ -1,20 +1,28 @@
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image 360°</title>
-    <!-- Aframe JS-->
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- TreeJS -->
+    <script src="https://unpkg.com/three@0.126.0/build/three.min.js"></script>
+    <!-- Panolens -->
+    <script src="js/ext/panolens.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <div>
-        <a-scene>
-            <a-sky src="img/360/PANO_20221231_131421_0.jpg" rotation="" ></a-sky>
-        </a-scene>
-    </div>    
 </body>
 <script>
-
+    let url = location.search.substring(1);
+    let params = new URLSearchParams(url);
+    let panorama = new PANOLENS.ImagePanorama(params.get("url_img"));
+    let viewer = new PANOLENS.Viewer();
+    viewer.add(panorama);
 </script>
+
 </html>
