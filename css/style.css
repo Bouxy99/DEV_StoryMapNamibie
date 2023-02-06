@@ -26,8 +26,8 @@ body {
     position: fixed;
     top: 5%;
     left: 5%;
-    height: 90%;
-    width: 90%;
+    height: 90% !important;
+    width: 90% !important;
     display: none;
     border-color: white;
     border-width: 25px;

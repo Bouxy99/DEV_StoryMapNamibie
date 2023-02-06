@@ -110,7 +110,6 @@ function moveCar(lngLat) {
 
     // Get altitude
     let elevation = Math.floor(map.queryTerrainElevation(lngLat, { exaggerated: true }));
-    console.log(elevation)
 
     modelAsMercatorCoordinate = mapboxgl.MercatorCoordinate.fromLngLat(
         lngLat,

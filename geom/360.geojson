@@ -14,111 +14,111 @@
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20221222_163032_1.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20221222_163032_1.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [15.15257500, -26.65026833]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20221223_114403_2.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20221223_114403_2.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [15.09307694, -26.63548583]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20221225_075459_1.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20221225_075459_1.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [15.30326722, -24.76434444]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20221225_085151_2.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20221225_085151_2.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [15.30310143, -24.76870579]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20221227_092726_1.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20221227_092726_1.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [14.52867444, -22.67650361]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20221229_185615_1.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20221229_185615_1.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [14.93087833, -20.87887083]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20221229_193050_4.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20221229_193050_4.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [14.93060250, -20.87907000]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20221231_131421_0.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20221231_131421_0.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [13.81969278, -19.14015500]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20230102_121507_0.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20230102_121507_0.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [13.24066917, -16.99938694]
             }
         },
         {
             "type": "Feature",
+            "properties": {
+                "url": "img/360/PANO_20230104_184829_0.jpg",
+                "rotation": "0 -130 0"
+            },
             "geometry": {
                 "type": "Point",
-                "properties": {
-                    "url": "img/360/PANO_20230104_184829_0.jpg",
-                    "rotation": "0 -130 0"
-                },
                 "coordinates": [16.09037056, -19.11652917]
             }
         }

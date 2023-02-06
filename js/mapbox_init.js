@@ -1,12 +1,12 @@
 // Mapbox token
-mapboxgl.accessToken = 'pk.eyJ1IjoiYm91eHkiLCJhIjoiY2szaGdyMHZxMDNhbTNwbnVudW0zNzh3NiJ9.BnhL9Tx9dwjiaQavX1F6PA';
+mapboxgl.accessToken = 'pk.eyJ1IjoiYm91eHkiLCJhIjoiY2xkc3RiemUzMHZvMTNvcGZkNnpvaDd2MSJ9.zVHlxjut0M9SBg4_vyTScA';
 // Map creation
 const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/satellite-v9', // style URL mapbox://styles/bouxy/cldejgtgt008e01t7me8x9caf/draft
     projection: 'globe', // Display the map as a globe
     center: [16.47, -22.79], // starting position [lng, lat]
-    zoom: 12, // starting zoom
+    zoom: 5, // starting zoom
     antialias: true
 });
 

@@ -27,11 +27,11 @@ addEventListener("scroll", (event) => {
 });
 
 //Show map after scrolling
+d_top_map = parseInt($('#map').css('top').replace('px',''));
 $(window).scroll(function () {
-    d_top_map = $('#map').offset().top;
-    if ((d_top_map - $(this).scrollTop()) <= 0) {
+    if (($(this).scrollTop()) >= d_top_map) {
         $('#map').removeClass('map_abs');
-        $('#map').addClass('map_fix');
+        $('#map').addClass('map_fix');  
     }
     else {
         $('#map').removeClass('map_fix');
